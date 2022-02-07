@@ -1,0 +1,33 @@
+Context provides a way to pass data through the component tree without
+having to pass props down manually at every level.
+
+demo.js  =======>  employee.js  =========>  department.js ===========> salary.js
+{
+    name:"Rahul Sharma",
+    department:"IT",
+    salary:5000.0
+}
+
+demo.js  =======>  employee.js  =========>  department.js ===========> salary.js
+
+                   <Employee />
+                   {this.props.salary}
+
+const MyContext = React.createContext({name:"Rahul Sharma"});
+
+we can send string, object etc
+
+Creates a Context object. When React renders a component that subscribes to this Context object 
+it will read the current context value from the closest matching Provider above it in the tree                   
+
+1. Provider 
+2. Consumer 
+
+
+<myContext.provider value={this.state.name}>
+</myContext.provider>
+
+<myContext.consumer>
+{data=> <h1>{data}</h1>} 
+</myContext.consumer>
+

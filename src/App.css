@@ -1,5 +1,32 @@
 .App {
   text-align: center;
+  /* background-color: brown;
+  color: white; */
+}
+.test
+{
+  text-align: center;
+  background-color: orangered;
+  color: white;
+}
+.add
+{
+  text-align: center;
+  background-color: burlywood;
+  color: white;
+}
+.mul
+{
+  text-align: center;
+  background-color: chocolate;
+  color: white;
+}
+.Emp
+{
+  text-align: center;
+  background-color: teal;
+  color: white;
+  border:'5px solid black'
 }
 
 .App-logo {
